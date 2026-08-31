@@ -70,8 +70,15 @@ public class Implement_Two_Stack_In_A_Array {
         ts.push2(9);
         ts.push2(1);
 
+        // pop element from stack1
+        System.out.print(ts.pop1()+" ");
 
+        // pop element from stack2
+        System.out.print(ts.pop2()+" ");
 
+        // pop again
+        System.out.print(ts.pop1()+" ");
+        System.out.print(ts.pop2()+" ");
 
     }
 }
