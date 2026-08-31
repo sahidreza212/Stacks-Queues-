@@ -60,6 +60,11 @@ public class Implement_Two_Stack_In_A_Array {
 
         Implement_Two_Stack_In_A_Array ts = new Implement_Two_Stack_In_A_Array(10);
 
+        // push element in stack1
+        ts.push1(5);
+        ts.push1(8);
+        ts.push1(3);
+
 
 
 
