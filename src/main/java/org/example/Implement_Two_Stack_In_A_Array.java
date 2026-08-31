@@ -34,6 +34,17 @@ public class Implement_Two_Stack_In_A_Array {
         }
     }
 
+    int pop1(){
+        if(top1 == -1){
+            // stack is empty and underflow
+            return -1;
+        }else {
+            int ele = arr[top1];
+            top1--;
+            return ele;
+        }
+    }
+
     public static void main(String[] args) {
 
     }
