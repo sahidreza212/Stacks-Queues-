@@ -8,6 +8,10 @@ public class Postfix_Implementation {
         }
         return a/b;
     }
+
+    public static int evaluatePostfix(String [] arr){
+
+    }
     public static void main(String[] args) {
 
     }
