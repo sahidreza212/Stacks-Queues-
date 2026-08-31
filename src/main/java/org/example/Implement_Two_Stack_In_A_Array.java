@@ -14,7 +14,15 @@ public class Implement_Two_Stack_In_A_Array {
         top2 = mid-1;
     }
 
-
+    void push1(int x){
+        if(top1 == mid-1){
+            // stack  full and overflow;
+            return;
+        }else {
+            top1++;
+            arr[top1] = x;
+        }
+    }
 
     public static void main(String[] args) {
 
