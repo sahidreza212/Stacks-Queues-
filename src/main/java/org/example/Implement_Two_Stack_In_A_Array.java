@@ -65,6 +65,11 @@ public class Implement_Two_Stack_In_A_Array {
         ts.push1(8);
         ts.push1(3);
 
+        // push element in stack2
+        ts.push2(4);
+        ts.push2(9);
+        ts.push2(1);
+
 
 
 
