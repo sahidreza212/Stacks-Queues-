@@ -24,6 +24,16 @@ public class Implement_Two_Stack_In_A_Array {
         }
     }
 
+    void push2(int x){
+        if(top2 == size-1){
+            // stack full and overflow
+            return;
+        }else {
+            top2++;
+            arr[top2] = x;
+        }
+    }
+
     public static void main(String[] args) {
 
     }
