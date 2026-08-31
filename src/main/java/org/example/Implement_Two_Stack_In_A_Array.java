@@ -58,5 +58,10 @@ public class Implement_Two_Stack_In_A_Array {
 
     public static void main(String[] args) {
 
+        Implement_Two_Stack_In_A_Array ts = new Implement_Two_Stack_In_A_Array(10);
+
+
+
+
     }
 }
