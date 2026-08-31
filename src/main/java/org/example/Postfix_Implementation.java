@@ -33,6 +33,10 @@ public class Postfix_Implementation {
         return st.pop();
     }
     public static void main(String[] args) {
+        String[] arr = {"2", "3", "1", "*", "+", "9", "-"};
+
+        System.out.println(evaluatePostfix(arr));
+
 
     }
 }
