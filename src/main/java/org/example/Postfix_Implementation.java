@@ -15,11 +15,15 @@ public class Postfix_Implementation {
 
         Stack<Integer>st = new Stack<>();
         for(String token : arr){
-            // handle the negative token
+
+            // handle operands and the negative operands also
             if(Character.isDigit(token.charAt(0)) ||
             token.length() > 1 && token.charAt(0) == '-'){
                 st.push(Integer.parseInt(token));
+
             }else {
+
+                // handle the operators here ---->
                 int val1 = st.pop();
                 int val2 = st.pop();
 
@@ -33,10 +37,9 @@ public class Postfix_Implementation {
         return st.pop();
     }
     public static void main(String[] args) {
+
         String[] arr = {"2", "3", "1", "*", "+", "9", "-"};
-
         System.out.println(evaluatePostfix(arr));
-
 
     }
 }
