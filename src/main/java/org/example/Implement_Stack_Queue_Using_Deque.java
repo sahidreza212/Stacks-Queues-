@@ -121,6 +121,7 @@ public class Implement_Stack_Queue_Using_Deque {
     }
 
     static class Stack{
+
         deque d = new deque();
 
         public void push(int x){
@@ -135,6 +136,14 @@ public class Implement_Stack_Queue_Using_Deque {
         public void display(){
             d.display();
         }
+    }
+
+
+    static  class Queue{
+
+        deque d = new deque();
+
+
     }
     public static void main(String[] args) {
 
