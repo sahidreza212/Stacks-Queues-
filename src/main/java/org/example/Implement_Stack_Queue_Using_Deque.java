@@ -119,6 +119,11 @@ public class Implement_Stack_Queue_Using_Deque {
             }
         }
     }
+
+    static class Stack{
+        deque d = new deque();
+
+    }
     public static void main(String[] args) {
 
     }
