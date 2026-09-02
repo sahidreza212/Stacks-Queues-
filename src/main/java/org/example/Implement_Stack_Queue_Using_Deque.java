@@ -146,6 +146,9 @@ public class Implement_Stack_Queue_Using_Deque {
         public void enqueue(int x){
             d.insert_last(x);
         }
+        public void dequeue(){
+            d.remove_first();
+        }
 
 
     }
