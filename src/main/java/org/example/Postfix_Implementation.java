@@ -38,7 +38,7 @@ public class Postfix_Implementation {
     }
     public static void main(String[] args) {
 
-        String[] arr = {"2", "3", "1", "*", "+", "9", "-"};
+        String[] arr = {"2", "32", "1", "*", "+", "9", "-"};
         System.out.println(evaluatePostfix(arr));
 
     }
