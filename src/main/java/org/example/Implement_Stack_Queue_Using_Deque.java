@@ -149,6 +149,9 @@ public class Implement_Stack_Queue_Using_Deque {
         public void dequeue(){
             d.remove_first();
         }
+        public int size(){
+            return d.size();
+        }
 
 
     }
