@@ -59,6 +59,24 @@ public class Implement_Stack_Queue_Using_Deque {
                 head = temp;
             }
         }
+
+        // insert_last
+        void insert_last(int element){
+
+            // Allocate the node of DQueNode type
+            DQueNode temp = new DQueNode();
+            temp.value = element;
+
+            if(head == null){
+                head = tail = temp;
+                temp.prev = temp.next = null;
+            }else {
+                tail.next = temp;
+                temp.next = null;
+                temp.prev = tail;
+                tail = temp;
+            }
+        }
     }
     public static void main(String[] args) {
 
