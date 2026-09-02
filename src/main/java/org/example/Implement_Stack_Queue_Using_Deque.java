@@ -132,6 +132,9 @@ public class Implement_Stack_Queue_Using_Deque {
         public void pop(){
             d.remove_last();
         }
+        public void display(){
+            d.display();
+        }
     }
     public static void main(String[] args) {
 
