@@ -28,6 +28,20 @@ public class Implement_Stack_Queue_Using_Deque {
             return false;
         }
 
+        // size function
+        int size(){
+            if(!isEmpty()){
+                DQueNode temp = head;
+                int len = 0;
+
+                while(temp != null){
+                    len++;
+                    temp = temp.next;
+                }
+                return len;
+            }
+            return 0;
+        }
     }
     public static void main(String[] args) {
 
