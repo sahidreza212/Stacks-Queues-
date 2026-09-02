@@ -105,6 +105,19 @@ public class Implement_Stack_Queue_Using_Deque {
                 System.out.println("List is Empty");
             }
         }
+
+        // display all element
+        public void display(){
+            if(!isEmpty()){
+                DQueNode temp = new DQueNode();
+                while(temp != null){
+                    System.out.println(temp.value+" ");
+                    temp = temp.next;
+                }
+            }else {
+                System.out.println("List is Empty");
+            }
+        }
     }
     public static void main(String[] args) {
 
