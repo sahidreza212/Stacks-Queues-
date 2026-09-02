@@ -10,14 +10,24 @@ public class Implement_Stack_Queue_Using_Deque {
     }
 
     // create deque class
-    static class deque{
+    static class deque {
+
         private DQueNode head;
         private DQueNode tail;
 
         // constructor
-        public deque(){
+        public deque() {
             head = tail = null;
         }
+
+        // list is empty or not
+        boolean isEmpty() {
+            if(head == null){
+                return true;
+            }
+            return false;
+        }
+
     }
     public static void main(String[] args) {
 
