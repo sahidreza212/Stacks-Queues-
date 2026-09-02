@@ -109,9 +109,9 @@ public class Implement_Stack_Queue_Using_Deque {
         // display all element
         public void display(){
             if(!isEmpty()){
-                DQueNode temp = new DQueNode();
+                DQueNode temp = head;
                 while(temp != null){
-                    System.out.println(temp.value+" ");
+                    System.out.print(temp.value+" ");
                     temp = temp.next;
                 }
             }else {
