@@ -143,6 +143,10 @@ public class Implement_Stack_Queue_Using_Deque {
 
         deque d = new deque();
 
+        public void enqueue(int x){
+            d.insert_last(x);
+        }
+
 
     }
     public static void main(String[] args) {
