@@ -91,6 +91,20 @@ public class Implement_Stack_Queue_Using_Deque {
                 System.out.println("List is Empty");
             }
         }
+
+        // remove_last
+        public void remove_last(){
+            if(!isEmpty()){
+                if(head == tail){
+                    head = tail = null;
+                }else {
+                    tail = tail.prev;
+                    tail.next = null;
+                }
+            }else {
+                System.out.println("List is Empty");
+            }
+        }
     }
     public static void main(String[] args) {
 
