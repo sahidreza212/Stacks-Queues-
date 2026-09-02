@@ -123,6 +123,9 @@ public class Implement_Stack_Queue_Using_Deque {
     static class Stack{
         deque d = new deque();
 
+        public void push(int x){
+            d.insert_last(x);
+        }
     }
     public static void main(String[] args) {
 
