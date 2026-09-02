@@ -156,9 +156,52 @@ public class Implement_Stack_Queue_Using_Deque {
             d.display();
         }
 
-
     }
     public static void main(String[] args) {
 
+        // Object of Stack
+        Stack stk = new Stack();
+
+        // push 7 and 8 at top of stack
+        stk.push(7);
+        stk.push(8);
+        System.out.print("Stack: ");
+        stk.display();
+
+
+        // For new line
+        System.out.println();
+
+        // pop an element
+        stk.pop();
+        System.out.print("Stack: ");
+        stk.display();
+
+        // For new line
+        System.out.println();
+
+        // Object of Queue
+        Queue que = new Queue();
+
+        // Insert 12 and 13 in queue
+        que.enqueue(12);
+        que.enqueue(13);
+        System.out.print("Queue: ");
+        que.display();
+
+        // New line
+        System.out.println();
+
+        // Delete an element from queue
+        que.dequeue();
+        System.out.print("Queue: ");
+        que.display();
+
+        // New line
+        System.out.println();
+        System.out.println("Size of stack is "
+                + stk.size());
+        System.out.println("Size of queue is "
+                + que.size());
     }
 }
