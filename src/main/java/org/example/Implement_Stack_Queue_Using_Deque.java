@@ -126,6 +126,9 @@ public class Implement_Stack_Queue_Using_Deque {
         public void push(int x){
             d.insert_last(x);
         }
+        public int size(){
+          return d.size();
+        }
     }
     public static void main(String[] args) {
 
