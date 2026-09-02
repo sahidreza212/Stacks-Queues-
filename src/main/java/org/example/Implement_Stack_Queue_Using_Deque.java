@@ -77,6 +77,20 @@ public class Implement_Stack_Queue_Using_Deque {
                 tail = temp;
             }
         }
+
+        // remove_first
+        public void remove_first(){
+            if(!isEmpty()){
+                if(head == tail){
+                    head = tail = null;
+                }else {
+                    head = head.next;
+                    head.prev = null;
+                }
+            }else {
+                System.out.println("List is Empty");
+            }
+        }
     }
     public static void main(String[] args) {
 
