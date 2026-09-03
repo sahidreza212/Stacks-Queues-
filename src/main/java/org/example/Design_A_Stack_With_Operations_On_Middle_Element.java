@@ -9,6 +9,11 @@ public class Design_A_Stack_With_Operations_On_Middle_Element {
         // take the help of ArrayList to solve this problem
         ArrayList<Integer>stack = new ArrayList<>();
 
+        // push operation
+        void push(int x){
+            stack.add(x);
+        }
+
     }
     public static void main(String[] args) {
 
