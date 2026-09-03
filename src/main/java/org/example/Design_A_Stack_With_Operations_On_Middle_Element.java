@@ -42,5 +42,20 @@ public class Design_A_Stack_With_Operations_On_Middle_Element {
     public static void main(String[] args) {
 
 
+        myStack st = new myStack();
+
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+
+        System.out.println(st.middle());
+
+        st.removeMiddle();
+
+        System.out.println(st.middle());
+
+        System.out.println(st.pop());
     }
 }
