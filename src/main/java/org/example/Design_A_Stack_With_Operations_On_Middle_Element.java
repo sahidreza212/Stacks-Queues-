@@ -19,8 +19,17 @@ public class Design_A_Stack_With_Operations_On_Middle_Element {
             if(stack.isEmpty()){
                 return -1;
             }
-            return stack.get(stack.size()-1);
+            return stack.remove(stack.size()-1);
         }
+
+        // find middle operation
+        int middle(){
+            if(stack.isEmpty()){
+                return -1;
+            }
+            return stack.get(stack.size()/2);
+        }
+
 
     }
     public static void main(String[] args) {
