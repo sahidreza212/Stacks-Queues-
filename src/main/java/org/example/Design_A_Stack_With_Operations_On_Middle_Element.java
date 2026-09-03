@@ -30,6 +30,13 @@ public class Design_A_Stack_With_Operations_On_Middle_Element {
             return stack.get(stack.size()/2);
         }
 
+        //  remove the middle element
+        void removeMiddle(){
+            if(stack.isEmpty()){
+                return;
+            }
+            stack.remove(stack.size()/2);
+        }
 
     }
     public static void main(String[] args) {
