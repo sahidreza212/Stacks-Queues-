@@ -45,9 +45,29 @@ public class Design_A_Stack_With_Special_GetMin_Features {
         return min;
     }
 
-
+    boolean isEmpty(){
+        return stack.isEmpty();
+    }
 
     public static void main(String[] args) {
 
+        Design_A_Stack_With_Special_GetMin_Features s = new Design_A_Stack_With_Special_GetMin_Features();
+
+        // Push elements
+        s.push(18);
+        s.push(19);
+        s.push(29);
+        s.push(15);
+        s.push(16);
+
+        // Get minimum
+        System.out.println("Minimum = " + s.getMin());
+
+        // Pop elements
+        System.out.println("Popped = " + s.pop());
+        System.out.println("Minimum = " + s.getMin());
+
+        System.out.println("Popped = " + s.pop());
+        System.out.println("Minimum = " + s.getMin());
     }
 }
