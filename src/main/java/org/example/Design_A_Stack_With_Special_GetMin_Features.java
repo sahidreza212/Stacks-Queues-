@@ -24,6 +24,27 @@ public class Design_A_Stack_With_Special_GetMin_Features {
         }
     }
 
+    int pop(){
+        if(stack.isEmpty()){
+            return -1;
+        }
+        int top = stack.pop();
+        // if the top is encoded value
+        if(top < min){
+            int oldMin = min;
+            min = 2 * min - top;
+            return oldMin;
+        }
+        return top;
+    }
+
+    int getMin(){
+        if(stack.isEmpty()){
+            return -1;
+        }
+        return min;
+    }
+
 
 
     public static void main(String[] args) {
