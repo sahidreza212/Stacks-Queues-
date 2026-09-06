@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Stack;
+
 public class Infix_To_Postfix {
 
     static int prec(char c){
@@ -22,6 +24,12 @@ public class Infix_To_Postfix {
     }
 
     public static String infixToPostfix(String s){
+
+        Stack<Character>st = new Stack<>();
+        StringBuilder res = new StringBuilder();
+
+
+
 
     }
 
