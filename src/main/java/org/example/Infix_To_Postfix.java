@@ -47,11 +47,22 @@ public class Infix_To_Postfix {
                 }
                 st.pop();
             }
+            // if operator
+            else {
 
+                while( !st.isEmpty() && st.peek() != '(' &&
+                (prec(st.peek()) > prec(c) ||
+                (prec(st.peek()) == prec(c) && !isRightAssociative(c)))){
+                    res.append(st.pop());
+                }
+                st.push(c);
+            }
         }
-
-
-
+        // pop remaining operators
+        while( !st.isEmpty()){
+            res.append(st.pop());
+        }
+        return res.toString();
 
     }
 
