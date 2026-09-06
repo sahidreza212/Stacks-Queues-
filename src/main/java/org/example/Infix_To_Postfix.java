@@ -36,6 +36,17 @@ public class Infix_To_Postfix {
                 res.append(c);
             }
 
+            // if '(' , push to stack
+            else if(c == '(') {
+                st.push(c);
+            }
+            // if ')', pop until '('
+            else if(c == ')') {
+                while(!st.isEmpty() && st.peek() != '('){
+                    res.append(st.pop());
+                }
+                st.pop();
+            }
 
         }
 
