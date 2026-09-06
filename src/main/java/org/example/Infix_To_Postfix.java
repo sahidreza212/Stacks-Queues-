@@ -1,6 +1,7 @@
 package org.example;
 
 public class Infix_To_Postfix {
+
     static int prec(char c){
 
         if(c == '^'){
@@ -16,6 +17,13 @@ public class Infix_To_Postfix {
         }
     }
 
+    static boolean isRightAssociative(char c){
+        return c == '^';
+    }
+
+    public static String infixToPostfix(String s){
+
+    }
 
     public static void main(String[] args) {
         String exp = "a*(b+c)/d";
