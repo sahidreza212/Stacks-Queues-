@@ -10,14 +10,17 @@ public class Longest_Valid_Parentheses {
         int maxLen = 0;
 
         for(int i = 0; i < s.length(); i++){
+
             if(s.charAt(i) == '('){
                 st.push(i);
+
             }else {
                 st.pop();
 
                 if(st.isEmpty()){
                     st.push(i);
                 }else {
+                    // most impotent line
                     maxLen = Math.max(maxLen,i-st.peek());
                 }
             }
