@@ -45,7 +45,5 @@ public class Stack_Permutation {
         }else {
             System.out.println("False");
         }
-
-
     }
 }
