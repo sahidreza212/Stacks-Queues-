@@ -13,7 +13,7 @@ public class Find_Duplicate_Parenthesis_or_not {
                 st.pop();
 
                 int elementInside = 0;
-                while(ch != '('){
+                while(top != '('){
                     elementInside++;
                     top = st.peek();
                     st.pop();
